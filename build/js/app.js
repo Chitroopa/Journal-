@@ -26,11 +26,11 @@ $(document).ready(function(){
    var paraOutputVowels = newJournal.countVowels(paraInput);
    var titleOutputConsonants = newJournal.countConsonants(titleInput);
    var paraOutputConsonants = newJournal.countConsonants(paraInput);
-   console.log("titleOutputVowels", titleOutputVowels);
-   console.log("paraOutputVowels", paraOutputVowels);
-   console.log("titleOutputConsonants", titleOutputConsonants);
-   console.log("paraOutputConsonants", paraOutputConsonants);
-
+  $("#tvowel").text(titleOutputVowels);
+  $("#tconsonants").text(titleOutputConsonants);
+  $("#cvowel").text(paraOutputVowels);
+  $("#cconsonants").text(paraOutputConsonants);
+  $(".result").show();
  });
 });
 
